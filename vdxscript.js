@@ -25,13 +25,12 @@ $( function () {
 });
 
 
-/*
 
+// Adds additional text to Demo
 $( '<div class="field_full"><h2 class="section-intro field_full">1. Tell us about you</h2></div>' ).insertBefore( ".first-intro-text" );
-  $( '<div class="field_full"><h2 class="section-intro field_full">2. Your industry</h2></div>' ).insertBefore( ".second-intro-text" );
-  $( '<div class="field_full"><h2 class="section-intro field_full">3. Meeting time</h2></div>' ).insertBefore( ".third-intro-text" );
+$( '<div class="field_full"><h2 class="section-intro field_full">2. Your industry</h2></div>' ).insertBefore( ".second-intro-text" );
+$( '<div class="field_full"><h2 class="section-intro field_full">3. Meeting time</h2></div>' ).insertBefore( ".third-intro-text" );
 
-});*/
 
 
 // Adds additional classes to elements for script to run
