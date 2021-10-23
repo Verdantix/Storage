@@ -1,4 +1,4 @@
-var version = "1";
+var version = "2";
 if (window.console) console.log(version);
 alert(version);
 
