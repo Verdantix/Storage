@@ -1,6 +1,5 @@
-var version = "2";
+var version = "Commit: 1.12 AW";
 if (window.console) console.log(version);
-alert(version);
 
 $( function() {
   $('div.Date_Picker').datepicker({
