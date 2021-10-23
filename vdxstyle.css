@@ -71,6 +71,9 @@ form.form .field-label{
 div.form-field.required {
   grid-template-columns: 1fr 60px;
 }
+div.form-field.required.third-intro-text.hasDatepicker {
+  grid-template-columns: 1fr;
+}
 
 div.form-field p.error {
   font-size: 14px;
@@ -271,6 +274,12 @@ div.ui-datepicker td span, div.ui-datepicker td a {
   margin:auto;
   line-height:40px;
   text-align:center
+}
+.ui-widget.ui-widget-content{
+  border: 1px solid lightgray !important;
+}
+.ui-corner-all{
+  border-radius: 4px !important;
 }
 
   /* Date Picker End*/
