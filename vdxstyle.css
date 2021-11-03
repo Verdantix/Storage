@@ -618,6 +618,5 @@ div.other-show-grid{
   opacity: 0;
 }
 .comms-consent span.value span label{
-  display: grid;
-  grid-template-columns: 30px 1fr;
+  display: block;
 }
