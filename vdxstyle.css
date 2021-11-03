@@ -17,12 +17,11 @@ h2  {font-size: 28px;line-height:1.2;padding-bottom:0px;font-weight: 800;}
 
 form.form {
   margin:0px;
-  padding: 40px;
   display: grid;
-  -ms-grid-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -ms-grid-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-  background: #F9F9F9;
+  background: #ffffff;
   border-radius: 10px;
 }
 
@@ -596,9 +595,9 @@ div.other-show-grid{
 }
 
 .comms-consent {
-  padding: 20px;
+  padding: 0px 20px 20px 20px;
   color: #013688;
-    border-radius: 10px;
+  border-radius: 10px;
 }
 .comms-consent input + label:before {
   margin-top: 0px;
@@ -618,5 +617,6 @@ div.other-show-grid{
   opacity: 0;
 }
 .comms-consent span.value span label{
+  font-size: 14px;
   display: block;
 }
