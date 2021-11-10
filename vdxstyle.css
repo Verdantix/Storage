@@ -620,3 +620,6 @@ div.other-show-grid{
   font-size: 14px;
   display: block;
 }
+p.submit {
+  margin-bottom: 40px;
+}
