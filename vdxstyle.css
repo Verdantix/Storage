@@ -9,7 +9,7 @@ body{
 }
 main {
   margin:20px auto;
-  max-width:760px;
+  max-width:700px;
 }
 
 
@@ -32,7 +32,7 @@ form.form {
 form.form input.text, form.form textarea.standard, form.form select, form.form input.date { 
   background-color:#FFFFFF;
   border:1px solid #CCCCCC;
-  font-size:16px;
+  font-size:14px;
   color:#555555;
   -moz-border-radius:4px;
   -webkit-border-radius:4px;
@@ -72,6 +72,10 @@ div.form-field.required {
 }
 div.form-field.required.third-intro-text.hasDatepicker {
   grid-template-columns: 1fr;
+}
+
+.form-field.required label:first-child:after {
+  content: "*";
 }
 
 div.form-field p.error {
@@ -578,7 +582,7 @@ to {
   text-align: center;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 12px;
   color: #013688;
   font-weight: normal;
   padding-left:20px;
