@@ -5,11 +5,10 @@
    box-sizing: border-box; 
   }
 body{
-  background: #ffffff;
 }
 main {
   margin:20px auto;
-  max-width:700px;
+  max-width:740px;
 }
 
 
@@ -296,7 +295,7 @@ div.ui-datepicker td span, div.ui-datepicker td a {
   width: 100%;
 }
 div.form-field.required.user-needs span.value {
-  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));;
 }
 
   /* Demo User Type
@@ -472,6 +471,10 @@ to {
   content:"  (Select one primary area of interest)";
   font-size: 10px;
   text-transform: none;
+}
+.secondary-interest {
+  display: none;
+  opacity: 0;
 }
 .secondary-interest label.field-label:after {
   content:"  (Select all secondary areas of interest)";
