@@ -14,6 +14,8 @@ main {
 
 h2  {font-size: 28px;line-height:1.2;padding-bottom:0px;font-weight: 800;}
 
+h2.form-title  {font-weight:bold; margin-top: 0px;}
+
 form.form {
   margin:0px;
   display: grid;
@@ -21,6 +23,7 @@ form.form {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   border-radius: 10px;
+  padding-bottom: 40px;
 }
 
 .field_full, .form-field.required input, .form-field.required select,  .field_full span.value{
@@ -144,6 +147,32 @@ input:-webkit-autofill:active{
   background-color: #3f76f5;
 }
 
+.loader {
+display: none;
+position: absolute;
+top:calc(50% - 10px);
+right:40px;
+z-index:100;
+margin-left: 20px;
+margin-right: 0px;
+border: 2px solid #fff;
+width: 16px;
+height: 16px;
+border-radius: 50%;
+border-top-color: #225EEC;
+border-left-color: #225EEC;
+animation: spin 1s infinite ease-in;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 /* General Form Styles */
 
@@ -486,7 +515,9 @@ to {
   border:0px solid #CCCCCC;
   border-radius: 10px;
   background: #F5F7F9;
+  background: #FFFFFF;
 }
+
 .secondary-interest span.value label, .add-interest label{
   padding: 8px 14px 8px 8px;
   border: 1px solid lightgray;
@@ -627,5 +658,8 @@ div.other-show-grid{
   display: block;
 }
 p.submit {
-  margin-bottom: 40px;
+  position:relative;
+}
+p.consent-webinar {
+  font-size:10px;
 }
