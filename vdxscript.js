@@ -1,4 +1,4 @@
-var version = "Commit: 1.38 AW";
+var version = "Commit: 1.39 AW";
 if (window.console) console.log(version);
 
 
@@ -108,35 +108,3 @@ $(document).ready(function(){
   $('.email span.description').html(link);
   }
 });
-
-
-$( function() {
-  $('div.Date_Picker').datepicker({
-      inline: true,
-      altField: '#562622_216785pi_562622_216785',
-    firstDay: 1, dayNamesMin:[ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ],
-      beforeShowDay: function(date) {
-      var day = date.getDay();
-      return [(day != 0 && day != 6)];}, 
-      minDate: 0, maxDate: "+1M +10D" 
-  });
-});
-
-$( function() {
-  $('#562622_216785pi_562622_216785').change(function(){
-  $('div.Date_Picker').datepicker('setDate', $(this).val());
-  });
-});
-
-$( function () {
-  $(".timepicker select").val("1524099");
-  /*$(".timezone select").val("1524063");*/
-});
-
-
-
-// Adds additional text to Demo
-$( '<div class="field_full"><h2 class="section-intro field_full">1. Tell us about you</h2></div>' ).insertBefore( ".first-intro-text" );
-$( '<div class="field_full"><h2 class="section-intro field_full">2. Your industry</h2></div>' ).insertBefore( ".second-intro-text" );
-$( '<div class="field_full"><h2 class="section-intro field_full">3. Meeting time</h2></div>' ).insertBefore( ".third-intro-text" );
-
