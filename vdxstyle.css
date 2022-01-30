@@ -318,14 +318,15 @@ div.ui-datepicker td a {
 }
 /* Date Picker End*/
 .user-needs span.value,
-.primary-interest span.value {
+.primary-interest span.value, 
+.checkbox span.value {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   width: 100%;
 }
-div.form-field.required.user-needs span.value {
+div.form-field.required.user-needs span.value, .checkbox span.value {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   ;
 }
@@ -404,23 +405,28 @@ ul.rel-links li a:hover,
   border: 1px solid #12245b5b !important;
 }
 .interest input,
-.comms-consent input {
+.comms-consent input,
+.checkbox input {
   opacity: 0;
   position: absolute;
   transition: all .3s ease-in-out;
 }
 .interest span.value input:checked+label,
-.interest span.value input:hover+label {
+.interest span.value input:hover+label,
+.checkbox span.value input:checked+label,
+.checkbox span.value input:hover+label {
   color: #225EEC;
   border: 1px solid #225EEC;
   transition: all .3s ease-in-out;
 }
-.interest span.value input:checked+label {
+.interest span.value input:checked+label,
+.checkbox span.value input:checked+label {
   background: #225fec10;
   transition: all .3s ease-in-out;
 }
 .interest input+label:before,
-.comms-consent input+label:before {
+.comms-consent input+label:before,
+.checkbox input+label:before {
   content: '';
   background: #fff;
   border: 1px solid #CCCCCC;
@@ -437,7 +443,8 @@ ul.rel-links li a:hover,
   line-height: 10px;
   transition: all .3s ease-in-out;
 }
-.interest input:checked+label:before {
+.interest input:checked+label:before,
+.checkbox input:checked+label:before {
   content: "\f00c";
   font-family: 'FontAwesome';
   background: #013688;
@@ -445,7 +452,7 @@ ul.rel-links li a:hover,
   color: #ffffff;
   border-radius: 20px;
 }
-.primary-interest span.value label {
+.primary-interest span.value label, .checkbox span.value label {
   padding: 20px;
   border: 1px solid lightgray;
   width: 100%;
