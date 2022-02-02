@@ -33,7 +33,7 @@ form.form {
 .form-field.required input,
 .form-field.required select,
 .field_full span.value,
-.form-field.required textarea {
+.form-field.field_full textarea.standard {
   grid-column: 1/-1;
 }
 form.form input.text,
