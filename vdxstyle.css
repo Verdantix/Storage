@@ -167,6 +167,27 @@ input:-webkit-autofill:active {
   border-left-color: #225EEC;
   animation: spin 1s infinite ease-in;
 }
+.loaderBox {
+  position: relative;
+  width: 100%;
+  height:500px;
+}
+.loader-big {
+  display: inline-block;
+  position: absolute;
+  top:calc(50% - 60px);
+  left:calc(50% - 60px);
+  z-index:100;
+  border: 4px solid #fff;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border-top-color: #225EEC;
+  border-left-color: #225EEC;
+  animation: spin 1s infinite ease-in;
+  color:transparent;
+  }
+  
 @keyframes spin {
   0% {
     transform: rotate(0deg);
