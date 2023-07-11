@@ -1,4 +1,4 @@
-var version = "Commit: 1.40 AW";
+var version = "1.50";
 if (window.console) console.log(version);
 
 // Adds additional classes to elements for script to run
@@ -7,6 +7,7 @@ $('.primary-interest span.value span:nth-child(2) input').addClass('int-opex');
 $('.primary-interest span.value span:nth-child(3) input').addClass('int-sb');
 $('.primary-interest span.value span:nth-child(4) input').addClass('int-esg');
 $('.primary-interest span.value span:nth-child(5) input').addClass('int-nz');
+$('.primary-interest span.value span:nth-child(6) input').addClass('int-rm');
 $('.email span.description').addClass('field_full');
 
 // Checks if there is an error on the page and then makes sure to remove relevant fields
