@@ -148,17 +148,33 @@ input:-webkit-autofill:active {
   box-sizing: border-box;
   margin-top: 0px;
   width: 100%;
+  transition: all .2s ease-in-out;
 }
 .btn_prime-blue {
   background-color: #225EEC;
   color: #ffffff;
-  transition: all .2s ease-in-out;
 }
 .btn_prime-blue:hover {
   background-color: #1d5ae9;
 }
 .btn_prime-blue:focus {
   background-color: #3f76f5;
+}
+.btn-eblue {
+    background-color: #47D0E6;
+    color: #ffffff;
+}
+.btn-eblue:hover,
+.btn-eblue:focus{
+    background-color: #8CE3F1;
+}
+.btn-dblue {
+    background-color: #0F122B;
+    color: #ffffff;
+}
+.btn-dblue:hover,
+.btn-dlbue:focus{
+    background-color: #22285B;
 }
 .loader {
   display: none;
