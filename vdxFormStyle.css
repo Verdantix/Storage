@@ -674,3 +674,62 @@ p.consent-webinar {
 form.form p.submit {
     margin: 0px!important;
 }
+input:disabled {
+    background-color: -internal-light-dark(rgba(239, 239, 239, 0.3), rgba(59, 59, 59, 0.3));
+    border-color: rgba(118, 118, 118, 0.3);
+}
+
+form.form textarea.standard {
+    width:100%!important;
+}
+
+form.form p.required label, form.form span.required label {
+    background:none !important; 
+    font-weight:bold;
+}
+
+form.form p.required label.field-label:after {
+    content:"*"; 
+    color: #424242; 
+}
+
+/* Captcha fix */
+form.form .pd-captcha {
+    position: relative !important;
+    width: 190px !important;
+    left: 0 !important;
+    display: block !important;
+    margin-top: 20px;
+}
+
+p.error {
+    float:right;
+    margin:0px!important;
+    font-size: 10px;
+     color: #F84854;
+}
+form.form div.error {
+    padding: 0 0 0 0!important;
+    }
+    
+div.notify_checkbox {
+      display: inline-block;
+      margin-right:10px;
+      margin-bottom: 10px;
+    }
+
+.event_consent label.inline:after{
+    content:"I understand that by registering for this event I will be providing my data to the events organiser. I consent to this personal data being transferred and accept that other attendees as well as exhibitors or sponsors may contact me about their projects or services after the event. I agree that the attendee or sponsor may transfer my data outside of the European Economic Area for these purposes and I consent to such transfer. I also understand and agree that my personal data may be held and used by the organiser of this event, and any third party hosting provider acting on its behalf, in order to stage the event and to analyse visitor traffic with a view to improving the event experience for participants.";
+  }
+.email_consent label.inline:after{
+    content:"I understand that by submitting this form I will receive Verdantix communications for the areas of interest that I have selected. I understand I can opt out at any time using the unsubscribe link provided in all emails.";
+  }
+.corporate_consent label.inline:after{
+    content:"I confirm that I am a technology buyer or user and eligible for a Corporate ticket. Purchases from individuals from Supplier or Consulting firms will be cancelled and subject to a $49 admin fee for a refund.";
+  }
+.corporate_consent_UK label.inline:after{
+    content:"I confirm that I am a technology buyer or user and eligible for a Corporate ticket. Purchases from individuals from Supplier or Consulting firms will be cancelled and subject to a £49 admin fee for a refund.";
+  }
+.corporate_comp_consent label.inline:after{
+  content:"I confirm that I am a technology buyer or user and eligible for a Corporate ticket.";
+}
