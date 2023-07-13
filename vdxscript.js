@@ -1,6 +1,10 @@
 var version = "1.50";
 if (window.console) console.log(version);
 
+//Seamless will make the form height 100%
+window.seamless.connect()
+
+//activate the loading spinner on the submit button
 function spinner() {
     document.getElementsByClassName("loader")[0].style.display = "inline-block";
 }
