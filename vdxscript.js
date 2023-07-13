@@ -1,6 +1,9 @@
 var version = "1.50";
 if (window.console) console.log(version);
 
+function spinner() {
+    document.getElementsByClassName("loader")[0].style.display = "inline-block";
+}
 // Adds additional classes to elements for script to run
 $('.primary-interest span.value span:nth-child(1) input').addClass('int-ehs');
 $('.primary-interest span.value span:nth-child(2) input').addClass('int-opex');
