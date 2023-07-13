@@ -108,3 +108,6 @@ $(document).ready(function () {
     $('.email span.description').html(link);
   }
 });
+// Get URL
+ 	var url_string = window.location.href;
+	var url = new URL(url_string);
